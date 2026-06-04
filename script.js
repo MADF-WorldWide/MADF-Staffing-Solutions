@@ -3,6 +3,9 @@ function ensureIcon(rel,href,type){if(!document.querySelector('link[rel="'+rel+'
 ensureIcon('icon',fav,'image/svg+xml');
 ensureIcon('shortcut icon',fav,'image/svg+xml');
 ensureIcon('apple-touch-icon',fav,'image/svg+xml');
+const polish=document.createElement('style');
+polish.textContent='fieldset{border:0!important;border-radius:22px!important;box-shadow:0 16px 45px rgba(16,32,51,.1)!important;background:#fff!important;padding:1.55rem!important;margin:0!important;overflow:hidden!important}legend{display:block!important;float:none!important;width:100%!important;margin:0 0 1.25rem 0!important;padding:0!important;font-size:1.25rem!important;font-weight:1000!important;line-height:1.15!important;color:#102033!important}.grid,.two,.three{align-items:start!important}.card{align-self:start!important}input,select,textarea{min-width:0!important}';
+document.head.appendChild(polish);
 const EMAIL='melissasteele462@outlook.com';
 const enc=s=>encodeURIComponent(s||'');
 const menu=document.querySelector('.menu'),tog=document.querySelector('.toggle');
