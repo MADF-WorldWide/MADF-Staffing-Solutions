@@ -1,3 +1,8 @@
+const fav='assets/favicon.svg';
+function ensureIcon(rel,href,type){if(!document.querySelector('link[rel="'+rel+'"]')){let l=document.createElement('link');l.rel=rel;if(type)l.type=type;l.href=href;document.head.appendChild(l);}}
+ensureIcon('icon',fav,'image/svg+xml');
+ensureIcon('shortcut icon',fav,'image/svg+xml');
+ensureIcon('apple-touch-icon',fav,'image/svg+xml');
 const EMAIL='melissasteele462@outlook.com';
 const enc=s=>encodeURIComponent(s||'');
 const menu=document.querySelector('.menu'),tog=document.querySelector('.toggle');
